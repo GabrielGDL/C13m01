@@ -11,7 +11,7 @@ const prompt = require('prompt-sync')();
 // // Quando uso '=', estou atribuindo um valor
 // let tempo = prompt('Como está o tempo? ');
 
-// // Quando uso '==', estou COMPARANDO os valores
+// Quando uso '==', estou COMPARANDO os valores
 // if (tempo == 'sol') {
 //     console.log('Maycon vai levar os filhos à praça'); 
 //     console.log('Maycon vai comprar um sorvete');
@@ -24,7 +24,7 @@ const prompt = require('prompt-sync')();
 //     console.log('Maycon vai ficar jogando video-game.')
 // }
 
-// console.log();
+// // console.log();
 // let dinheiro = prompt('Quanto dinheiro o Maycon tem? ');
 
 // if (dinheiro >= 20){
@@ -58,19 +58,18 @@ const prompt = require('prompt-sync')();
 /*
 Faça um Programa que peça dois números e imprima o maior deles, 
 e informe caso eles sejam iguais.
-*/
+// */
 
-let numero1 = +prompt('Digite um número: ');
-let numero2 = +prompt('Digite outro número: ');
+// let numero1 = +prompt('Digite um número: ');
+// let numero2 = +prompt('Digite outro número: ');
 
-if (numero1 > numero2){
-    console.log(`O número ${numero1} é maior!`);
-} else if (numero2 > numero1) {
-    console.log(`O número ${numero2} é maior!`);
-} else {
-    console.log('Os dois são iguais');
-}
+// if (numero1 > numero2){
+//     console.log(`O número ${numero1} é maior!`);
+// } else if (numero2 > numero1) {
+//     console.log(`O número ${numero2} é maior!`);
+// } else {
+//     console.log('Os dois são iguais');
+// }
 
-console.log();
-
+// console.log();
 
