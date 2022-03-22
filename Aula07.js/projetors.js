@@ -8,7 +8,7 @@ let pc = [];
 let pontosplayer = 0;
 let pontospc = 0;
 let empate = 0;
-let rejogar = 0;
+let rejogar = '';
 let escolhapc;
 
 let ini
@@ -47,7 +47,10 @@ do {
     } if (escolhaplayer == 'tesoura' && escolhapc == 'papel'){
         console.log('Você Ganhou!');
         pontosplayer++
-    }
+        rejogar = prompt('Deseja jogar de novo?');
+    }   while (rejogar == 'sim');
+        continue;
+      
 }
 
 
