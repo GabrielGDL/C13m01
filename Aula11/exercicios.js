@@ -24,5 +24,26 @@ const prompt = require('prompt-sync')();
 // valores(valor1, valor2); 
 
 
-let idade = prompt('Digite a sua idade : ');
-validanumero(idade);
+// let idade = prompt('Digite a sua idade : ');
+// validanumero(idade);
+
+
+let op1 = "Oliver"
+let op2 = "Tati"
+let op3 = "lili"
+
+
+
+let opcao = +prompt(`Escolha entre ${op1}, ${op2}, ${op3} ` );
+console.log(opcao);
+
+while (opcao == 0){
+    opcao = +prompt('Escolha uma opção;' );
+}   if (opcao == 1){
+    console.log(`Você escolheu ${op1}`);
+}   else if (opcao == 2){
+    console.log(`Você escolheu ${op2}`);
+}   else  {
+    console.log(`Você escolheu ${op3}`);
+}
+    
