@@ -58,8 +58,8 @@ while (novo == 'sim'){
 // console.log(teste2);
 // console.log();
 
-// //&& = E lógico, se TODAS as condições forem true, retorna true
-// //|| = OU lógico, se UMA das condições for true, retorna true
+// && = E lógico, se TODAS as condições forem true, retorna true
+// || = OU lógico, se UMA das condições for true, retorna true
 // let boolteste = teste && teste2;
 // let boolteste2 = teste || teste2;
 

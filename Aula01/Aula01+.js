@@ -49,8 +49,8 @@ console.log();
 
 */
 
-let numero1 = +prompt('Digite um número: ');
-let numero2 = +prompt('Digite outro número: ');
+// let numero1 = +prompt('Digite um número: ');
+// let numero2 = +prompt('Digite outro número: ');
 
 // // Fazendo os cálculos direto no console.log
 // console.log('A soma dos dois é:', numero1 + numero2);
@@ -60,15 +60,20 @@ let numero2 = +prompt('Digite outro número: ');
 
 // Outra forma:
 // Fazendo os cálculos e guardando em novas variáveis para apresentar no console.log
-let soma = numero1 + numero2;
-let sub =  numero1 - numero2;
-let mult =  numero1 * numero2;
-let div =  numero1 / numero2;
+// let soma = numero1 + numero2;
+// let sub =  numero1 - numero2;
+// let mult =  numero1 * numero2;
+// let div =  numero1 / numero2;
 
 // Aqui eu não preciso fazer o cálculo novamente, ele já foi feito e armazenado nas variáveis usadas
-console.log('A soma dos dois é:', soma);
-console.log('A subtração dos dois é:', sub);
-console.log('A multiplicação dos dois é:', mult);
-console.log('A divisão dos dois é:', div);
+// console.log('A soma dos dois é:', soma);
+// console.log('A subtração dos dois é:', sub);
+// console.log('A multiplicação dos dois é:', mult);
+// console.log('A divisão dos dois é:', div);
 
-console.log();
+// console.log();
+
+let nome = prompt('digite nome');
+console.log(nome);
+console.log(typeof nome);
+
