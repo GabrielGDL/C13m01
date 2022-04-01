@@ -33,49 +33,56 @@ const prompt = require('prompt-sync')();
 
 
 
-let personagem = {
-    nome: 'Gabriel',
-    cansaco: 10,
-    fome: 10,
+// let personagem = {
+//     nome: 'Gabriel',
+//     cansaco: 10,
+//     fome: 10,
 
-    verificastatus: function(){
-        if (this.cansaco <= 2 || this.fome <= 2){
-            return true;
-        }
-    },
+//     verificastatus: function(){
+//         if (this.cansaco <= 2 || this.fome <= 2){
+//             return true;
+//         }
+//     },
 
-    descansar: function(){
-        console.log('Você descansou.')
-        this.cansaco = 10;
-        this.fome = 10;
-    },
+//     descansar: function(){
+//         console.log('Você descansou.')
+//         this.cansaco = 10;
+//         this.fome = 10;
+//     },
 
-    exibestatus: function(){
-        console.log(`Cansaço: ${this.cansaco}`);
-        console.log(`Fome: ${this.fome}`);
-    }
-}
+//     exibestatus: function(){
+//         console.log(`Cansaço: ${this.cansaco}`);
+//         console.log(`Fome: ${this.fome}`);
+//     }
+// }
 
-// Quando uso while()
-while (true){
-    // Antes de apresentar as possibilidade de escolha, verifico o status do meu personagem.
-    if (personagem.verificastatus()){
-        console.log('Você está cansado ou com fome.');
-        console.log('Você foi obrigado a descansar.')
-        console.log('Sua vida e cansaço foram restaurados.')
-        console.log();
-        personagem.descansar();
-        continue;
-    } else {
-        personagem.exibestatus();
-        let canseira = +prompt('Quanto você cansou? (0 para sair) ');
+// // Quando uso while()
+// while (true){
+//     // Antes de apresentar as possibilidade de escolha, verifico o status do meu personagem.
+//     if (personagem.verificastatus()){
+//         console.log('Você está cansado ou com fome.');
+//         console.log('Você foi obrigado a descansar.')
+//         console.log('Sua vida e cansaço foram restaurados.')
+//         console.log();
+//         personagem.descansar();
+//         continue;
+//     } else {
+//         personagem.exibestatus();
+//         let canseira = +prompt('Quanto você cansou? (0 para sair) ');
         
-        // If criado apenas para poder sair do while infinito.
-        if (canseira == 0){
-            break;
-        }
+//         // If criado apenas para poder sair do while infinito.
+//         if (canseira == 0){
+//             break;
+//         }
 
-        //Reduzindo o status de acordo com o valor entrado.
-        personagem.cansaco -= canseira;
-    }
+//         //Reduzindo o status de acordo com o valor entrado.
+//         personagem.cansaco -= canseira;
+//     }
+// }
+
+
+async function funcaoAsync(){
+    return 'Blue';
 }
+
+console.log(funcaoAsync());

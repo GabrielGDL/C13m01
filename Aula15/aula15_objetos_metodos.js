@@ -16,22 +16,22 @@ const prompt = require('prompt-sync')();
 //         console.log(`Meu nome é ${this.nome}, eu tenho ${this.idade} anos e peso ${this.peso} kg. Meu conhecimento é: ${this.conhecimento}`)
 //     },
 
-//     calculaIMC: function(){
-//         let imc = this.peso / (this.altura**2);
-//         console.log(`O IMC de ${this.nome} é: ${imc}`);
+    // calculaIMC: function(){
+    //     let imc = this.peso / (this.altura**2);
+    //     console.log(`O IMC de ${this.nome} é: ${imc}`);
 
-//         if (imc <= 18.5){
-//             console.log(`${this.nome} está um pouco magro(a)`);
-//         } else if (imc <= 24.9){
-//             console.log(`${this.nome} está com o peso ideal`);
-//         } else if (imc <= 30){
-//             console.log(`${this.nome} está um pouco acima do peso`);
-//         } else if (imc > 30){
-//             console.log(`${this.nome} está com obesidade`);       
-//         }
+    //     if (imc <= 18.5){
+    //         console.log(`${this.nome} está um pouco magro(a)`);
+    //     } else if (imc <= 24.9){
+    //         console.log(`${this.nome} está com o peso ideal`);
+    //     } else if (imc <= 30){
+    //         console.log(`${this.nome} está um pouco acima do peso`);
+    //     } else if (imc > 30){
+    //         console.log(`${this.nome} está com obesidade`);       
+    //     }
 
-//         return imc;
-//     },
+    //     return imc;
+    // },
 
 //     envelhecer: function(){
 //         this.idade++;
