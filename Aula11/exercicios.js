@@ -34,7 +34,7 @@ let op3 = "lili"
 
 
 
-let opcao = +prompt(`Escolha entre ${op1}, ${op2}, ${op3} ` );
+let opcao = +prompt(`Escolha entre 1, 2, 3 ` );
 console.log(opcao);
 
 while (opcao == 0){
