@@ -20,3 +20,4 @@ let total = preco * quantidade;
 console.log(`${cliente}, o valor total é: ${total}`);
 
 console.log();
+

@@ -66,21 +66,39 @@ e imprima toda a tabuada dele do 1 ao 10.
 
 
 
-// FOR... OF (voltaremos a isso sexta-feira).
-let filmes = ["Jurassic Park", "O Senhor dos Aneis", "Harry Potter", "O Exorcista"];
+// // FOR... OF (voltaremos a isso sexta-feira).
+// let filmes = ["Jurassic Park", "O Senhor dos Aneis", "Harry Potter", "O Exorcista"];
 
-for (let filme of filmes) {
-    console.log(filme);
+// for (let filme of filmes) {
+//     console.log(filme);
+// }
+
+
+
+
+
+// // // Recebendo um número aleatório de 1 a 10.
+// // let numerorandom = Math.floor(Math.random() * 10) + 1;
+
+// // console.log(numerorandom);
+
+
+// console.log();
+
+// let lista = []
+
+// for (let i = 0; i <= 2; i++){
+//     lista[i] = prompt('Digite um nome  ')
+// }
+
+// for (let i = 0; i < lista.length; i++){
+//     console.log(`Olá ${lista[i]}`);
+// }
+
+
+let i = 0
+
+while (i <= 10){
+    console.log(i)
+    i++
 }
-
-
-
-
-
-// // Recebendo um número aleatório de 1 a 10.
-// let numerorandom = Math.floor(Math.random() * 10) + 1;
-
-// console.log(numerorandom);
-
-
-console.log();
