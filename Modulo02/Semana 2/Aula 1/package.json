@@ -10,9 +10,9 @@
     "dev": "nodemon -e js,html,css,ejs"
   },
   "keywords": [
-    "Gabrieldl"
+    
   ],
-  "author": "",
+  "author": "Gabrieldl",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
