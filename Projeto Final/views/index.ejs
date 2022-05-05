@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='/css/style.css' rel="stylesheet" >
     <title> Index </title>
+
 </head>
 <body>
-    <h1> Index </h1>
-    
-</body>
     <%- include('./partials/header.ejs') %>
     <main>
-        MAIN
+        <div id="sub__header"> </div>
+        <section id="card__container">
+            <% listFilmes.forEach(element => { %>
+            <a href="/detalhes/<%= element.id %> ">
+                <article class="cards">
+                    <div class="card_img">
+                        <img src="<%= element.img %> " alt="<%= element.nome %> ">
+                    </div>
+                    <div class="card_name">
+                        <%= element.nome %>
+                    </div>
+                </article>
+            </a>
+            <% }) %>
+        </section>
     </main>
+    <button> </button>
     <%- include('./partials/footer.ejs') %>
+</body>
+
 </html>

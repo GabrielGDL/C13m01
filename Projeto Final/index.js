@@ -1,6 +1,7 @@
 import express from 'express'
 import { routers } from './src/routers/routers.js'
 import path from 'path'
+import dotenv from 'dotenv'
 
 const app = express()
 const port = 3008
