@@ -1,9 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
-
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
@@ -43,8 +47,8 @@ header::after {
     left: 0;
     top: -50px;
     background-color: rgb(61, 0, 0);
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     transform: rotate(45deg);
 }
 
@@ -96,23 +100,84 @@ section#details_container {
 
 section article.cards {
     height: 250px;
-    width: 150px;
-    border: 1px solid red
+    width: 250px;
+    
+    border: 1px solid blueviolet
 }
 
-article.cards div.cards_img {
+article.cards div.card_img {
     display: flex;
     justify-content: center;
     height: 90%;
     border: 1px solid red
 }
 
-article.cards div.cards_img img {
+article.cards div.card_img img {
     height: 100%;
 }
 
 article.cards div.card_name {
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 10%;
+}
+
+table {
+    width: 500px;
+    text-align: center;
+   
+}
+
+/* table tr:nth-child(odd) {
+    background-color: black;
+} */
+
+table th {
+    color: blueviolet;
+}
+
+div.btn__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section#form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+section#form__container form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+form fieldset {
+    padding: 20px;
+}
+
+fieldset legend {
+    background-color: blueviolet;
+}
+
+fieldset.fieldset__data {
+    border: none;
+}
+
+form div#btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+form button#btn__submit {
+    background-color: black;
+    color: #fff;
+    height: 40px;
+    width: 60px;
 }

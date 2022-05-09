@@ -13,18 +13,28 @@
         <div id="sub__header">
             <%= filmesDetalhes.nome %>
         </div>
-        <section id="card__container details">
+        <section id="details_container">
             <iframe <%= filmesDetalhes.iframe %>> </iframe>
             <table>
+
                 <thead>
-                    <th> Detalhes </th>
+                    <th colspan="2"> Detalhes </th>
                 </thead>
                 <tbody>
-                    <td>
-                        <tr> Filme </tr>
-                        <tr> <%= filmesDetalhes.nome %> </tr>
-                    </td>
+                    <tr>
+                        <td> Diretor </td>
+                        <td> <%= filmesDetalhes.diretor %> </td>
+                    </tr>
+                    <tr>
+                    <td> Duração </td>
+                        <td> <%= filmesDetalhes.duracao %> minutos </td>
+                    </tr>
+                    <tr>
+                        <td> Lançamento </td>
+                        <td> <%= filmesDetalhes.ano %> </td>
+                    </tr>
                 </tbody>
+                <tfoot></tfoot>
             </table>
         </section>
             

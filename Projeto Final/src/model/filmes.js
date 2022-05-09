@@ -3,7 +3,7 @@ import { connection } from '../database/connection.js'
 
 export const filmes = connection.define('filmes', {
     
-        Id: {
+        id: {
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true,
@@ -42,3 +42,13 @@ export const filmes = connection.define('filmes', {
 
 })
 
+const initTable = async () => {
+    try {
+        await filmes.sync()
+    }
+    catch(error) {
+        return error.message
+    }
+}
+
+initTable()
