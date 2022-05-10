@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/style.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Criar</title>
   </head>
 
@@ -41,12 +43,26 @@
               <label for="iframe"> Iframe </label>
             </fieldset>
             <div id="btn__container">
-              <button id="btn__submit" type="submit">Enviar</button>
+              <button id="btn__submit" type="submit"> Enviar </button>
             </div>
           </fieldset>
         </form>
       </section>
     </main>
-    <% - include('./partials/footer.ejs') %>
+
+    <% - include('./partials/footer.ejs') %> 
+    <% if (toggle) { %>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "Sucess!",
+        text: "Novo filme cadastrado com sucesso!",
+        timer: 5000,
+      });
+      setInterval(() => {
+        window.location.href = "/";
+      }, 1000);
+    </script>
+    <% } %>
   </body>
 </html>

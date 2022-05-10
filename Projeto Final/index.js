@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const port = 3008
+const port = 3008 || process.env.PORT
 let __dirname = path.resolve(path.dirname(''))
 
 console.log(__dirname)
